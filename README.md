@@ -1,1 +1,1 @@
-# omakase-restaurant
+# omakase-sushi

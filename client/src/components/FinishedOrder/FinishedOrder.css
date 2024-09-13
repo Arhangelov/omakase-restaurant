@@ -1,0 +1,138 @@
+
+.finish-order-container {
+    margin: 0 auto;
+    padding: 9rem 0;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.finish-order-container > div:first-child{
+    flex-basis: 40%;
+}
+
+.finish-order-container > div:first-child > h4{
+    padding-bottom: 2rem;
+}
+
+.finish-order-container > div > p {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: salmon;
+}
+
+.finish-order-container > div:last-child {
+    z-index: 1;
+    flex-basis: 30%;
+    font-size: .8rem;
+    padding: 1rem;
+}
+
+.order-details-container {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.order-details-container > p {
+}
+
+.order-main-container {
+    background-color: rgb(23, 32, 38);
+    border-radius: .5rem;
+}
+
+.order-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem
+}
+
+.container-img{
+    flex-basis: 20%;
+}
+
+.product-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+.order-product-container > p:nth-child(2) {
+    flex-basis: 30%;
+}
+
+.order-product-container > p:nth-child(3) {
+    flex-basis: 5%;
+}
+
+.order-product-container > p:last-child {
+    flex-basis: 30%;
+}
+
+.expenses-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.expenses-container > button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(252, 250, 242);
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+}
+
+.expenses-container > div > p:first-child {
+    padding-bottom: .5rem;
+}
+
+.expenses-container > div > p:nth-child(2) {
+    font-size: 1rem;
+}
+
+.expenses-container > div > p:last-child {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+    .finish-order-container {
+        flex-direction: column;
+    }
+
+    .finish-order-container > div:first-child {
+        width: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    .finish-order-container > div:first-child {
+        width: 90%;
+    }
+
+    .finish-order-container > div:last-child {
+        width: 100%;
+    }
+
+    .expenses-container {
+        gap: 2rem;
+    }
+
+    .expenses-container > button {
+        font-size: .6rem;
+        padding: .5rem 1rem;
+    }
+}

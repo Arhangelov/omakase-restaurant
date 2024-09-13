@@ -1,0 +1,114 @@
+.profile-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9rem;
+    width: 80%;
+}
+
+.order-again-wrapper {
+    margin: 0 auto;
+    max-width: 913px;
+}
+
+.order-again-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-bottom: 9rem;
+}
+
+.order-again-container:last-child::after {
+    content: " ";
+    width: 25%;
+    height: 30vh;
+}
+
+.order-card {
+    border: 1px solid rgb(252, 250, 242);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 25%;
+    height: 30vh;
+}
+
+.order-card > p:first-child {
+    color: rgba(252, 250, 242, 0.8);
+    padding-bottom: .5rem;
+}
+
+.ordered-products {
+    padding-bottom: .5rem;
+    overflow: auto;
+}
+
+.order-card > p:nth-child(3) {
+    color: rgb(255, 189, 46);
+    padding-bottom: .5rem;
+}
+
+.order-card > button {
+    background-color: transparent;
+    border: 1px solid rgb(252, 250, 242);
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.order-card > button:hover {
+    background-color: rgb(252, 250, 242);
+    color: rgb(24, 32, 38);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px){
+    .profile-container > h1 {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .profile-container > p {
+        padding-bottom: .6rem;
+    }
+
+    .order-card {
+        width: 30%;
+    }
+
+    .order-again-container {
+        padding-bottom: 0;
+    }
+
+    .order-again-container:last-child::after {
+        width: 30%;
+    }
+}
+
+@media (max-width: 850px) {
+    .order-card {
+        width: 50%;
+    }
+
+    .order-again-container:last-child::after {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .order-again-container {
+        width: 100%;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,4 @@
+# Compiled Output
+/dist
+/node_modules
+.env

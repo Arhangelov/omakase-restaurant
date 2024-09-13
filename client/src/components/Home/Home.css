@@ -1,0 +1,513 @@
+.header-home {
+    position: absolute;
+    top:25%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 9em 0;
+    margin-left: 4em;
+}
+
+.header-shadow {
+    padding: 3rem;
+}
+
+.header-home > h1 {
+    font-size: 3.6em;
+    padding-bottom: 3rem;
+    color: rgb(252, 250, 242);
+}
+
+.header-shadow > h1 .header-shadow > p {
+    text-shadow: 3px 3px black;
+}
+
+.header-shadow > p {
+    padding-bottom: 2em;
+}
+
+.header-shadow > a {
+    background-color: rgb(124, 0, 29);
+    border-radius: .6rem;
+    padding: .5em 1em;
+    color: rgb(252, 250, 242);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 45%;
+}
+
+.header-home > a:hover {
+    background-color: rgb(190, 18, 59);
+    color: white;
+    cursor: pointer;
+}
+
+.sushi-video {
+    width: 100%;
+    position: relative;
+    top: -6rem;
+    left: 0;
+    z-index: -1;
+}
+
+video {
+    object-fit: cover;
+    object-position: left;
+}
+
+.bg-content {
+    background-color: rgb(11, 16, 19);
+}
+
+.scroll-down {
+    position: relative;
+    top:-4.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(252, 250, 242);
+    font-size: 36px;
+}
+
+.container-sub-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.img-container > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content > h1 {
+    color: rgb(252, 250, 242); 
+    margin-bottom: 1.5em;
+}
+
+.content > p {
+    margin-bottom: 2em;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.register-btn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(252, 250, 242);
+    border-radius: .2rem;
+}
+
+.about-btn {
+    padding: .5rem 1rem;
+    border: 1px solid rgb(252, 250, 242);
+    margin-right: 1rem;
+    border-radius: .2rem;
+}
+
+.container-popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.container-popular > p {
+    margin-top: 6em;
+}
+
+.container-popular > h2 {
+    margin-bottom: 3rem;
+}
+
+.popular-products {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 17em;
+    border: 2px solid #7c001d;
+    border-radius: 1em;
+    padding: 1rem;
+}
+
+.product-card:hover {
+    animation: .2s ease-in 0s forwards levitate-card;
+}
+
+@keyframes levitate-card {
+    0% {
+        position: relative;
+        top: 0;
+    }
+    25% {
+        position: relative;
+        top: -.3rem;
+        box-shadow: 0 0 20px rgba(243, 132, 29, 0.11);
+    }
+    50% {
+        position: relative;
+        top: -.6rem;
+        box-shadow: 0 0 40px rgba(243, 132, 29, 0.11);
+    }
+    75% {
+        position: relative;
+        top: -.9rem;
+        box-shadow: 0 0 60px rgba(243, 132, 29, 0.11);
+    }
+    100% {
+        position: relative;
+        top: -1.2rem;
+        box-shadow: 0 0 80px rgba(243, 132, 29, 0.11);
+    }
+}
+
+.productImg {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: .5em .5em 0 0em;
+    margin-bottom: 1em;
+}
+
+.product-card > p:nth-child(2) {
+    margin-bottom: 2em;
+    color: rgb(250, 173, 100);
+}
+
+.product-card > p:nth-child(3) {
+    color: rgba(252, 250, 250, 0.6);
+}
+
+.price-and-buy {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-and-buy > a {
+    border: 1px solid #7c001d;
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+}
+
+
+.price-and-buy > button {
+    background-color: transparent;
+    border: 1px solid rgba(252, 250, 242, 0.753);
+    padding: .2rem .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customer-container {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-container > p {
+    color: rgba(252, 250, 242, 0.534);
+    font-size: 12px;
+    margin-bottom: 3rem;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.review > i {
+    color: rgb(252, 250, 242);
+    margin-bottom: 1rem;
+}
+
+.comment {
+    margin-bottom: 1rem;
+}
+
+.customer-pic {
+    margin-bottom: .5rem;
+    border-radius: 50%;
+}
+
+.customer-pic > img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+.customer-info p {
+    color: rgba(252, 250, 242, 0.753);
+    font-size: 12px;
+}
+
+.book-table-container {
+    display: flex;
+    padding: 0 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.book-table-content {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 9rem;
+}
+
+.book-table-content > p:nth-child(2) {
+    margin-bottom: 2rem;
+    color: rgba(252, 250, 242, 0.753);
+}
+
+
+.book-table-content > p:nth-child(4) {
+    margin-bottom: 3rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cta-buttons > a {
+    border: 1px solid rgb(252, 250, 242);
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+}
+
+.book-table-img {
+    width: 50%;
+}
+
+.book-table-img > img {
+    width: 100%;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 6rem 4rem;
+}
+
+.faq-container > header {
+    text-align: center;
+    border-bottom: 2px solid rgba(252, 250, 242, 0.1);
+    width: 100%;
+}
+
+.faq-container > header > h2 {
+    margin-bottom: 1rem;
+}
+
+.faq-container > header > p {
+    padding-bottom: 3rem;
+    color: rgba(252, 250, 242, 0.6);
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.question {
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(252, 250, 242, 0.1);
+}
+
+.question > p:nth-child(1) {
+    margin-bottom: .3rem;
+}
+
+.question > p:nth-child(2) {
+    font-size: 12px;
+    color: rgba(252, 250, 242, 0.6);
+}
+
+.contact-container {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.contact-container > h4 {
+    padding-bottom: 1rem;
+}
+
+.contact-container > p {
+    padding-bottom: 2rem;
+}
+
+.contact-container > a {
+    border: 1px solid rgb(252, 250, 242);
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+}
+
+@media (max-width: 1024px) {
+
+    video {
+        object-position: center;
+        
+    }
+
+    .header-home {
+        top: 15%;
+        width: 60%;
+    }
+
+    .header-shadow > h1 {
+        width: 100%;
+        padding: 0; 
+        margin-left: 0;
+        padding-bottom: 1rem;
+    }
+
+    .header-shadow > p {
+        font-size: .9rem;
+    }
+
+    .container-sub-hero {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .img-container {
+        padding: 0;
+        width: 80%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .content > h1 {
+        margin-bottom: 1rem;
+    }
+
+    .customer-container {
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+
+    .reviews-container {
+        justify-content: flex-start;
+    }
+
+    .review {
+        width: 38%;
+    }
+
+    .book-table-container {
+        margin: 0 auto;
+        width: 80%;
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .book-table-content {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .book-table-img {
+        width: 100%;
+    }
+
+    .faq-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-shadow {
+        padding: 0;
+    }
+
+    .header-home {
+        top: 15%;
+        width: 80%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .header-shadow > a {
+        background-color: rgba(124, 0, 29);
+        font-size: .8rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .buttons {
+        font-size: .9rem;
+    }
+
+    .review {
+        width: 80%;
+    }
+
+    .book-table-container {
+        width: 100%;
+        padding: 0 4rem;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+}

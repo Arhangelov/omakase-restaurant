@@ -1,0 +1,74 @@
+.register-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+
+.register-page-container > video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(1.5rem);
+    object-position: 0 -1700px;
+}
+
+.register-container {
+    width: 430px;
+    background-color: rgb(23, 32, 38);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.register-container > form {
+    display: flex;
+    flex-direction: column;
+}
+
+[name="email"] ,
+[name="username"] ,
+[name="password"] ,
+[name="confirmPassword"] ,
+[name="address"] {
+    margin-bottom: 1.5rem;
+    color: rgb(23, 32, 38);
+}
+
+.register-container > p {
+    font-size: .8rem;
+}
+
+.register-container > p > a {
+    color: rgb(223, 119, 21);
+}
+
+.register-container > p > a:hover {
+    color: rgb(255, 147, 46);
+}
+
+@media (max-width: 1024px) {
+    .register-page-container > video {
+        object-position: center;
+        filter: blur(1rem);
+    }
+
+}
+
+@media (max-width: 500px) {
+    .register-page-container > video {
+        filter: blur(.6rem);
+    }
+
+    .register-container {
+        width: 330px;
+        background-color: rgba(23, 32, 38, 0.9);
+    }
+
+}

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+:root {
+    --logo-font: "Permanent Marker", cursive;
+    --heading-font: "Delta Gothic One", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 16, 19);
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 62, 73);
+    border-radius: 100vw;
+}
+
+ul li {
+    padding: .65em;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 10.7px;
+    letter-spacing: .2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(252, 250, 242);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }
+
+p, a, label, button {
+    font-family: var(--paragraph-font);
+    color: rgb(252, 250, 242);
+}
+
+input {
+    font-family: var(--paragraph-font);
+}
+
+[type="submit"] {
+    color:rgb(252, 250, 242);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 250, 242);
+}
+
+
+.App {
+    color: rgb(11, 16, 19);
+    box-shadow: inset 3em 9em 9em black ;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: rgb(37, 55, 70);
+}
+
+.nav-subscribe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgba(252, 250, 242, 0.384);
+}
+
+.logo-nav-container > h2 {
+    font-family: var(--logo-font);
+    letter-spacing: .3rem;
+    padding-bottom: .5rem;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.footer-navigation > a {
+    padding-bottom: .2rem;
+}
+
+.footer-navigation > a:hover {
+    padding-bottom: .1rem;
+    border-bottom: 2px solid rgba(252, 250, 242, 0.384);
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe > label {
+    padding-bottom: .3rem;
+    color: rgb(252, 250, 242);
+    font-size: 14px;
+}
+
+.subscribe > div > input {
+    margin-right: .5rem;
+}
+
+.subscribe > div > button,
+.subscribe > div > input {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(252, 250, 242);
+    border: 1px solid rgb(252, 250, 242);
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+}
+
+.subscribe-container > p {
+    font-size: 12px;
+    color: rgba(252, 250, 242, 0.736);
+}
+
+.policy-rights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 1rem;
+}
+
+.policy-container {
+    display: flex;
+    gap: .5rem;
+    text-decoration: underline;
+    text-decoration-color: rgba(252, 250, 242, 0.384);
+}
+
+.expenses-container {
+    border-top: 1px solid rgba(252, 250, 242, 0.384);
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    h1, h2, h3, h4 { 
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .nav-subscribe-container {
+        gap: 1rem;
+    }
+
+    .footer-navigation {
+        gap: .5rem;
+        font-size: 11px;
+    }
+
+    .subscribe > label {
+        font-size: 13px;
+    }
+
+    .subscribe-container > p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-subscribe-container {
+        padding-bottom: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .policy-rights-container {
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+
+    .subscribe > div > input {
+        width: 42%;
+    }
+
+    .subscribe-btn {
+        width: 33%;
+    }
+}
