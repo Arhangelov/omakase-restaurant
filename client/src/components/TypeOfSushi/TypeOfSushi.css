@@ -171,6 +171,11 @@
         flex-wrap: wrap;
         align-content: center;
     }
+
+    .sushi-product-container > a {
+        height: auto;
+        width: 100%;
+    }
     
     .price-and-buy-container {
         display: flex;
