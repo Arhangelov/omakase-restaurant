@@ -50,12 +50,15 @@
 }
 
 .menu-navigation > a:hover {
-    padding-bottom: .30rem;
     border-bottom: 2px solid rgba(184, 47, 65, 0.795);
 }
 
 .active-link {
     padding-bottom: .30rem;
+    border-bottom: 2px solid rgba(184, 47, 65, 0.795);
+}
+
+.active-link:hover {
     border-bottom: 2px solid rgba(184, 47, 65, 0.795);
 }
 

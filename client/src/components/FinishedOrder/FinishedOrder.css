@@ -38,10 +38,8 @@
     align-items: flex-start;
 }
 
-.order-details-container > p {
-}
-
 .order-main-container {
+    padding: 2rem;
     background-color: rgb(23, 32, 38);
     border-radius: .5rem;
 }
@@ -106,15 +104,34 @@
 
 .expenses-container > div > p:last-child {
     font-size: 1.2rem;
+    font-family: var(--heading-font);
+    font-weight: 900;
 }
 
 @media (max-width: 1024px) {
     .finish-order-container {
         flex-direction: column;
+        gap: 0;
+    }
+
+    .finish-order-container > div:first-child {
+        text-align: center;
+    }
+
+    .order-details-container {
+        align-items: center;
     }
 
     .finish-order-container > div:first-child {
         width: 55%;
+    }
+
+    .expenses-container {
+        flex-direction: column-reverse;
+    }
+
+    .expenses-container > button {
+        width: 100%;
     }
 }
 
@@ -129,6 +146,7 @@
 
     .expenses-container {
         gap: 2rem;
+        flex-direction: column-reverse;
     }
 
     .expenses-container > button {

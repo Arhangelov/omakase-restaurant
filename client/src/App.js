@@ -25,6 +25,8 @@ import FinishedOrder from './components/FinishedOrder/FinishedOrder';
 import './App.css';
 import { getCartService } from './services/cartService';
 import Navigation from './components/Navigation/Navigation';
+import { Privacy } from './components/Privacy/Privacy';
+import { Terms } from './components/Terms/Terms';
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -86,6 +88,8 @@ function App() {
           <Route path="/menu/details/:productId" element={<Details />} />
           <Route path="/cart" element={<Cart />} />
           <Route path='/finished-order' element={<FinishedOrder/>} />
+          <Route path='/privacy' element={<Privacy/>} />
+          <Route path='/terms' element={<Terms/>} />
         </Routes>
 
         <footer className="footer-container">
@@ -103,12 +107,12 @@ function App() {
 
                   <div className="policy-rights-container">
                       <div className="policy-container">
-                          <Link to={"/policy"}>Privacy Policy</Link>
+                          <Link to={"/privacy"}>Privacy Policy</Link>
                           <Link to={"/terms"}>Terms of Service</Link>
                           <Link to={"/cookie"}>Cookie Policy</Link>
                       </div>
                       <div className="rigths-container">
-                          <p>&copy; 2023 Omakase Sushi. All rights reserved.</p>
+                          <p>&copy; 2024 Omakase Sushi. All rights reserved.</p>
                       </div>
                   </div>
         </footer>

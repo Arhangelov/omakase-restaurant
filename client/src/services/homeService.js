@@ -1,5 +1,5 @@
-// const url = "https://omakase-sushi-api.vercel.app/";
-const url = "http://localhost:5000/";
+const url = "https://omakase-sushi-api.vercel.app/";
+// const url = "http://localhost:5000/";
 
 export const getPopularSushi = async ({ ...popularProducts }) => {
     return fetch( url, {

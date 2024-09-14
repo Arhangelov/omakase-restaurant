@@ -6,6 +6,7 @@
     --logo-font: "Permanent Marker", cursive;
     --heading-font: "Delta Gothic One", sans-serif;
     --paragraph-font: "Poppins", sans-serif;
+    --border-button: .5rem;
 }
 
 *{
@@ -84,15 +85,20 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 4rem;
-    background-color: rgb(37, 55, 70);
+    background-color: rgb(11, 16, 19);
 }
 
 .nav-subscribe-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 3rem;
-    border-bottom: 2px solid rgba(252, 250, 242, 0.384);
+}
+
+.logo-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo-nav-container > h2 {
@@ -197,12 +203,12 @@ a {
 @media (max-width: 500px) {
     .nav-subscribe-container {
         padding-bottom: 1.5rem;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .policy-rights-container {
         gap: 1rem;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .subscribe > div > input {

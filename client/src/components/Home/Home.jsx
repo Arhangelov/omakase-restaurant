@@ -103,7 +103,7 @@ const Home = () => {
                 <div className="header-shadow">
                     <h1>Fresh Healthy Delicious Sushi</h1>
                     <p>We made Fresh and healthy sushi with different recipes</p>
-                    <Link to={"/menu"}>Order Now <RiArrowRightSLine fontSize="1.5rem" paddingTop="3rem"/></Link>
+                    <Link to={"/menu/all"}>Order Now <RiArrowRightSLine fontSize="1.5rem" paddingTop="3rem"/></Link>
                 </div>
             </div>
 
@@ -148,7 +148,7 @@ const Home = () => {
                                             +
                                         </button>
                                     ) : (
-                                    <Link to={"/login"}>Login</Link>
+                                    <Link to={"/login"}>+</Link>
                                     )}
                                 </div>
                             </div>
@@ -221,7 +221,7 @@ const Home = () => {
                         <p><strong>Order Online:</strong> Bring Omakase brilliance to your doorstep.</p>
                         <div className="cta-buttons">
                             <Link to={"/contact"}>Book Now</Link>
-                            <Link to={"/menu"}>Order Now</Link>
+                            <Link to={"/menu/all"}>Order Now</Link>
                         </div>
                     </div>
                 

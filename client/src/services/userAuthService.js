@@ -1,5 +1,5 @@
-// const url = "https://omakase-sushi-api.vercel.app/auth";
-const url = "http://localhost:5000/auth";
+const url = "https://omakase-sushi-api.vercel.app/auth";
+// const url = "http://localhost:5000/auth";
 
 
 export const registerService = async ( newUser ) => {

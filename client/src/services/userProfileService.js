@@ -1,5 +1,5 @@
-// const url = "https://omakase-sushi-api.vercel.app/profile";
-const url = "http://localhost:5000/profile";
+const url = "https://omakase-sushi-api.vercel.app/profile";
+// const url = "http://localhost:5000/profile";
 
 export const getPurchaseHistoryService = async ( userEmail ) => {
     return fetch( url + '/get-purchase-history', {

@@ -29,7 +29,6 @@
 
 .container-header {
     display: flex;
-    border-bottom: 2px solid rgba(252, 250, 242, 0.144);
     justify-content: space-around;
     align-items: center;
 }
@@ -53,7 +52,7 @@ nav > ul {
 .nav-menu {
     border: 1px solid rgba(203, 27, 68, 0.795);
     padding: .5rem 2rem;
-    border-radius: .2rem;
+    border-radius: var(--border-button);
     font-weight: 400;
 }
 

@@ -67,7 +67,7 @@ video {
 
 .scroll-down {
     position: relative;
-    top:-4.5rem;
+    top:-9.5rem;
     left: 0;
     width: 100%;
     text-align: center;
@@ -89,6 +89,7 @@ video {
 .img-container > img {
     object-fit: cover;
     width: 100%;
+    border-radius: var(--border-button);
 }
 
 .content {
@@ -120,14 +121,14 @@ video {
     gap: .5rem;
     padding: .5rem 1rem;
     border: 1px solid rgb(252, 250, 242);
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 .about-btn {
     padding: .5rem 1rem;
     border: 1px solid rgb(252, 250, 242);
     margin-right: 1rem;
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 .container-popular {
@@ -161,6 +162,11 @@ video {
     border: 2px solid #7c001d;
     border-radius: 1em;
     padding: 1rem;
+}
+
+.product-card > img {
+    margin-bottom: 1rem;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .product-card:hover {
@@ -220,15 +226,15 @@ video {
 .price-and-buy > a {
     border: 1px solid #7c001d;
     padding: .2rem 1rem;
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 
 .price-and-buy > button {
     background-color: transparent;
-    border: 1px solid rgba(252, 250, 242, 0.753);
-    padding: .2rem .5rem;
-    border-radius: 50%;
+    border: 1px solid #7c001d;
+    padding: .5rem 1rem;
+    border-radius: var(--border-button);
     cursor: pointer;
 }
 
@@ -254,6 +260,7 @@ video {
 .review {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 20%;
 }
 
@@ -264,6 +271,13 @@ video {
 
 .comment {
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .customer-pic {
@@ -318,7 +332,7 @@ video {
 .cta-buttons > a {
     border: 1px solid rgb(252, 250, 242);
     padding: .2rem 1rem;
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 .book-table-img {
@@ -327,6 +341,7 @@ video {
 
 .book-table-img > img {
     width: 100%;
+    border-radius: var(--border-button);
 }
 
 .faq-container {
@@ -391,7 +406,7 @@ video {
 .contact-container > a {
     border: 1px solid rgb(252, 250, 242);
     padding: .2rem 1rem;
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 @media (max-width: 1024px) {
@@ -495,6 +510,12 @@ video {
 
     .buttons {
         font-size: .9rem;
+        justify-content: center;
+
+    }
+
+    .reviews-container {
+        justify-content: center;
     }
 
     .review {
@@ -504,6 +525,10 @@ video {
     .book-table-container {
         width: 100%;
         padding: 0 4rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
     }
 
     .faq-container {
