@@ -125,7 +125,7 @@
     background-color: transparent;
     border: 1px solid rgb(252, 250, 242);
     padding: .15rem .5rem;
-    border-radius: 50%;
+    border-radius: var(--border-button);
 }
 
 .price-and-buy-container > button:hover {

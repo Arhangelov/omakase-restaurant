@@ -109,7 +109,7 @@ const TypeOfSushi = () => {
                       +
                     </button>
                   ):(
-                    <Link to={"/login"}>Login</Link>
+                    <Link to={"/login"}>+</Link>
                   ) }
                 </div>
               </div>
