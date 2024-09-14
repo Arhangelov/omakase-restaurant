@@ -21,15 +21,27 @@ const Cart = () => {
   const [user, setUser] = useContext(Context);
   const navigate = useNavigate();
 
-
 useEffect(() => {
-  getCartService(user.email)
+  if(!user.email){
+    navigate("/");
+  } else {
+    getCartService(user.email)
     .then((cart) => {
       setCart(cart.products);
       setTotalPrice(cart.totalPrice);
       setCartQty(cart.sumQty);
     })
-}, [user.email, setCart, setCartQty])
+  }
+},[user.email, setCart, setCartQty])
+
+// useEffect(() => {
+//   getCartService(user.email)
+//     .then((cart) => {
+//       setCart(cart.products);
+//       setTotalPrice(cart.totalPrice);
+//       setCartQty(cart.sumQty);
+//     })
+// }, [user.email, setCart, setCartQty])
   
   //Decrement product quantity in the cart
   const handleDecrementProduct = useCallback(
