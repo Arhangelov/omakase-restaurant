@@ -46,13 +46,11 @@
 
 .addresses-section > h4, .contact-form-container > h4{
     text-transform: uppercase;
-    text-decoration: underline;
     padding-bottom: 1rem;
 }
 
 .business-title, .contact-title {
     text-transform: uppercase;
-    text-decoration: underline;
     font-weight: bold;
     padding-bottom: .6rem;
 }

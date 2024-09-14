@@ -62,7 +62,7 @@ const Contact = () => {
                             <label htmlFor="contact-quiz">
                                 Simple Quiz before sending your message
                                 <br />
-                                <strong>5 + 4=?</strong>
+                                <strong>5 + 4 = ?</strong>
                             </label>
                             <input type="text" name='contact-quiz' />
                             <input type="submit" value="Send" />
