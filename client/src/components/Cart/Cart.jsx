@@ -34,15 +34,6 @@ useEffect(() => {
   }
 },[user.email, setCart, setCartQty])
 
-// useEffect(() => {
-//   getCartService(user.email)
-//     .then((cart) => {
-//       setCart(cart.products);
-//       setTotalPrice(cart.totalPrice);
-//       setCartQty(cart.sumQty);
-//     })
-// }, [user.email, setCart, setCartQty])
-  
   //Decrement product quantity in the cart
   const handleDecrementProduct = useCallback(
     (productId) => {

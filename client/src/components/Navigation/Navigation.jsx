@@ -55,9 +55,9 @@ const Navigation = () => {
         navRef.current.classList.remove("responsive-nav")
     }
 
-    const onLogoutAndHideNavBatHandler = () => {
-        onLogoutHandler();
-        hideNavbar();
+    const onLogoutAndHideNavBarHandler = async ()  => {
+        await onLogoutHandler();
+        await hideNavbar();
     }
 
     return (
@@ -90,7 +90,7 @@ const Navigation = () => {
                         {user.username ? (
                         <>
                             <li>
-                                <Link onClick={ onLogoutAndHideNavBatHandler } className="nav-logout">
+                                <Link onClick={ onLogoutAndHideNavBarHandler } className="nav-logout">
                                     Logout
                                 </Link>
                             </li>
