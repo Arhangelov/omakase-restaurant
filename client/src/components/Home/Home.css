@@ -89,7 +89,7 @@ video {
 .img-container > img {
     object-fit: cover;
     width: 100%;
-    border-radius: var(--border-button);
+    border-radius: var(--border-imgs-and-cards);
 }
 
 .content {
@@ -341,7 +341,7 @@ video {
 
 .book-table-img > img {
     width: 100%;
-    border-radius: var(--border-button);
+    border-radius: var(--border-imgs-and-cards);
 }
 
 .faq-container {
@@ -435,7 +435,7 @@ video {
     .container-sub-hero {
         flex-direction: column;
         gap: 3rem;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .img-container {
