@@ -157,7 +157,7 @@ nav {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: rgb(23, 32, 38);
+        background-color: rgb(11, 16, 19);
         transition: 1s;
         z-index: 99;
     }

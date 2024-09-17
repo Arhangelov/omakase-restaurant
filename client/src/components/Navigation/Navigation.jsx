@@ -38,9 +38,10 @@ const Navigation = () => {
                 localStorage.clear();
                 setUser({ email: '', username: '', address: '' });
                 toast.success(`${res.message}`);
+                hideNavbar();
                 navigate('/');
+                toast.success("You successfully logged out.")
             })
-
             .catch((err) => {
                 toastErrorHandler(err);
             });
@@ -53,11 +54,6 @@ const Navigation = () => {
 
     const hideNavbar = () => {
         navRef.current.classList.remove("responsive-nav")
-    }
-
-    const onLogoutAndHideNavBarHandler = async ()  => {
-        await onLogoutHandler();
-        await hideNavbar();
     }
 
     return (
@@ -90,7 +86,7 @@ const Navigation = () => {
                         {user.username ? (
                         <>
                             <li>
-                                <Link onClick={ onLogoutAndHideNavBarHandler } className="nav-logout">
+                                <Link onClick={ onLogoutHandler } className="nav-logout">
                                     Logout
                                 </Link>
                             </li>
