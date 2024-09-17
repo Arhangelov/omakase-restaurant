@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 import SusiSahimi from "../../resources/sushi-sashimi-parallax.jpg"
+import { toastErrorHandler } from '../../utils/toastErrorHandling';
 
 const Cart = () => {
   const [cart, setCart] = useCart();
@@ -24,6 +25,7 @@ const Cart = () => {
 useEffect(() => {
   if(!user.email){
     navigate("/");
+    toastErrorHandler("You have to logged in to enter in cart.");
   } else {
     getCartService(user.email)
     .then((cart) => {
@@ -32,7 +34,7 @@ useEffect(() => {
       setCartQty(cart.sumQty);
     })
   }
-},[user.email, setCart, setCartQty])
+},[])
 
   //Decrement product quantity in the cart
   const handleDecrementProduct = useCallback(
