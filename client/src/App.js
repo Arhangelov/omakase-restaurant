@@ -27,6 +27,7 @@ import { getCartService } from './services/cartService';
 import Navigation from './components/Navigation/Navigation';
 import { Privacy } from './components/Privacy/Privacy';
 import { Terms } from './components/Terms/Terms';
+import { Cookie } from './components/Cookie/Cookie';
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -90,6 +91,7 @@ function App() {
           <Route path='/finished-order' element={<FinishedOrder/>} />
           <Route path='/privacy' element={<Privacy/>} />
           <Route path='/terms' element={<Terms/>} />
+          <Route path='/cookie' element={<Cookie/>} />
         </Routes>
 
         <footer className="footer-container">
