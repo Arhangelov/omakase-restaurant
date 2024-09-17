@@ -9,14 +9,16 @@
     align-content: center;
     justify-content: center;
     gap: 2rem;
+    flex-direction: row;
 }
 
 .img-container-details {
-    flex: 0 1 35%;
+    width: 40%;
 }
 
-.product-img{
+.product-img-details{
     width: 100%;
+    border-radius: var(--border-imgs-and-cards);
 }
 
 .content-container {
@@ -50,7 +52,7 @@ span > h3 {
     text-align: center;
     width: 35%;
     border: 1px solid rgb(252, 250, 242);
-    border-radius: .2rem;
+    border-radius: var(--border-button);
 }
 
 .btn-details:hover {
@@ -62,6 +64,7 @@ span > h3 {
 @media (max-width: 1024px) {
     .img-container-details {
         padding: 0;
+        width: 80%;
     }
 
     .container-details {

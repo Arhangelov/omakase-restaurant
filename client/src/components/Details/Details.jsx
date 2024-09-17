@@ -75,7 +75,7 @@ const Details = () => {
         <div className='details-page'>
             <div className="container-details">
                 <span className='img-container-details'>
-                    <img className='product-img' src={product.imageUrl} alt={product.title} />
+                    <img className='product-img-details' src={product.imageUrl} alt={product.title} />
                 </span>
 
                 <span className='content-container'>
