@@ -3,10 +3,10 @@ import "./Cookie.css"
 
 export const Cookie = () => {
     return (
-        <div className='cookie-container'>
+        <div className='cookie-page-container'>
             <h1>Cookie Policy</h1>
             <p>Last updated: 18.09.2024</p>
-            <p>This Cookie Policy explains how Omakase Sushi ("we", "us", or "our") uses cookies and similar technologies to recognize you when you visit our website at [Your Website URL] ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
+            <p>This Cookie Policy explains how Omakase Sushi uses cookies and similar technologies to recognize you when you visit our website at <strong>https://omakase-sushi-client.vercel.app/</strong> ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
             <h2>What are cookies?</h2>
             <p>Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.</p>
             <h2>Why do we use cookies?</h2>
@@ -23,7 +23,7 @@ export const Cookie = () => {
             <h2>Changes to this Cookie Policy</h2>
             <p>We may update this Cookie Policy from time to time in order to reflect changes to the cookies we use or for other operational, legal or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.</p>
             <h2>Contact us</h2>
-            <p>If you have any questions about our use of cookies or other technologies, please email us at [Your Contact Email].</p>
+            <p>If you have any questions about our use of cookies or other technologies, please email us at contact@omakase.com.</p>
         </div>
     )
 }
