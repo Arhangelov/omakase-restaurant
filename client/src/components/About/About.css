@@ -59,6 +59,7 @@
 
 .omakase-img-container > img,
 .edomae-img-container > img {
+    border-radius: var(--border-imgs-and-cards);
     object-fit: cover;
     width: 100%;
 }
@@ -88,7 +89,7 @@
 
 .about-cta-buttons > a {
     border: 1px solid rgb(252, 250, 242);
-    border-radius: .2rem;
+    border-radius: var(--border-button);
     padding: .5rem 1rem;
 }
 
@@ -127,7 +128,15 @@
 }
 
 @media (max-width: 500px) {
+    .omakase-content, .edomae-content {
+        width: 80%;
+    }
+
     .omakase-img-container, .edomae-img-container {
-        width: 60%;
+        width: 80%;
+    }
+
+    .about-cta-buttons {
+        justify-content: center;
     }
 }

@@ -63,10 +63,12 @@ p, a, label, button {
 
 input {
     font-family: var(--paragraph-font);
+    border-radius: var(--border-button);
 }
 
 [type="submit"] {
     color:rgb(252, 250, 242);
+    border-radius: var(--border-button);
 }
 
 a {

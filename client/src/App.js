@@ -113,7 +113,7 @@ function App() {
                           <Link to={"/terms"}>Terms of Service</Link>
                           <Link to={"/cookie"}>Cookie Policy</Link>
                       </div>
-                      <div className="rigths-container">
+                      <div className="rights-container">
                           <p>&copy; 2024 Omakase Sushi. All rights reserved.</p>
                       </div>
                   </div>
