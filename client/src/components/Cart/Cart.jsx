@@ -25,7 +25,7 @@ const Cart = () => {
 useEffect(() => {
   if(!user.email){
     navigate("/");
-    toastErrorHandler("You have to logged in to enter in cart.");
+    toastErrorHandler("You have to be logged in to enter in cart.");
   } else {
     getCartService(user.email)
     .then((cart) => {

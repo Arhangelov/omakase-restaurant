@@ -5,7 +5,8 @@ export const toastErrorHandler = (err) => {
         style: {
             borderRadius: "10px",
             background: "#333",
-            color: "#fff"
+            color: "#fff",
+            fontFamily:"var(--paragraph-font)"
         },
         duration: 9000
     })
