@@ -1,10 +1,10 @@
-import { useCallback, useContext, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 import { RiArrowRightSLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaStar } from "react-icons/fa6";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import MyVideo from "../../resources/dish-vid.mp4";
@@ -17,15 +17,11 @@ import SushiBar from "../../resources/pexels-airam-datoon.jpg";
 
 import "./Home.css"
 import { getPopularSushi } from '../../services/homeService';
-import { updateCartService } from '../../services/cartService';
-import { useCart } from '../../store/CartContext';
-import { Context } from '../../store/UserContext';
 import { motion, useTransform, useScroll } from "framer-motion";
+import { SushiProductCard } from '../SushiProductCard/SushiProductCard';
 
 const Home = () => {
     const [popProducts, setPopProducts] = useState([])
-    const [cart, setCart] = useCart()
-    const [user,] = useContext(Context);
 
     let ref = useRef(null);
     let { scrollYProgress } = useScroll({
@@ -47,47 +43,6 @@ const Home = () => {
             .then((products) => setPopProducts(Object.values(products))) //Cant push products to a array in useState and later to be map
             .catch((error) => console.log(error.message));
     }, [])
-
-    const addToCartHandler = useCallback(
-        (id, title, img, price) => {
-            const sushiProduct = { id, title, img, price, qty: 1 };
-            const currentCartItem = cart.find((item) => item.id === id);
-    
-            if (currentCartItem) {
-                const index = cart.indexOf(currentCartItem);
-                cart[index].qty += 1;
-    
-                setCart(cart);
-                
-                // Notification on successfully added product to cart
-                toast.success('🍣 Product is added to the cart!', {
-                    position: "top-center",
-                    autoClose: 2000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
-                return updateCartService(cart[index], user.email);
-            }
-    
-            setCart([ ...cart, sushiProduct ]);
-
-            // Notification on successfully added product to cart
-            toast.success('🍣 Product is added to the cart!', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-            });
-            return updateCartService(sushiProduct, user.email);
-        },[cart, setCart, user.email]);
 
     return (
         <div className="home-page" >
@@ -130,28 +85,10 @@ const Home = () => {
                 
                     <div className="popular-products">
                         {popProducts.map((product) => (
-                            <div className="product-card" key={product._id}>
-                                <img src={product.imageUrl} alt="Product" />
-                                <p>{product.title}</p>
-                                <p>{product.portion}</p>
-                                <div className="price-and-buy">
-                                    <p>${(product.price).toFixed(2)}</p>
-                                    {user.email ? (
-                                        <button onClick={() =>
-                                            addToCartHandler(
-                                                product._id,
-                                                product.title,
-                                                product.imageUrl,
-                                                product.price
-                                                )
-                                            }>
-                                            +
-                                        </button>
-                                    ) : (
-                                    <Link to={"/login"}>+</Link>
-                                    )}
-                                </div>
-                            </div>
+                            <SushiProductCard 
+                                singleSushi={product}
+                                isBestSeller={true}
+                            />
                         ))}
                     </div>
                 </div>

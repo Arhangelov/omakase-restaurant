@@ -499,6 +499,10 @@ video {
         width: 100%;
     }
 
+    .container-sub-hero {
+        padding: 0 3rem;
+    }
+
     .header-shadow > a {
         background-color: rgba(124, 0, 29);
         font-size: .8rem;
@@ -514,6 +518,10 @@ video {
 
     }
 
+    .customer-container {
+        padding: 0 3rem;
+    }
+
     .reviews-container {
         justify-content: center;
     }
@@ -524,7 +532,7 @@ video {
 
     .book-table-container {
         width: 100%;
-        padding: 0 4rem;
+        padding: 0 3rem;
     }
 
     .cta-buttons {
@@ -533,6 +541,7 @@ video {
 
     .faq-container {
         width: 100%;
+        padding: 6rem 3rem;
     }
 
 }
