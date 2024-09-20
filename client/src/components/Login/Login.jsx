@@ -29,7 +29,6 @@ const Login = () => {
         e.preventDefault();
         const loginData = { email, password };
 
-
         if(formData.email === "" || formData.password === ""){
             toastErrorHandler("Both Email and Password are required.")
         } else {

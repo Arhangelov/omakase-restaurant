@@ -29,31 +29,39 @@ const Register = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
 
-        if (password !== confirmPassword) {
-            console.log("Password do not match");
-        } else {
-            const newUser = {
-                email,
-                username,
-                password,
-                confirmPassword,
-                address
-            };
+        //Check if any of the fields are empty
+        const hasEmptyFields = Object.values(formData).some(value => value === "");
 
-            registerService(newUser)
-                .then(response => {
-                    if (response.errors) {
-                        const errMsg = response.errors.map(err => err.msg);
-                        throw new Error(errMsg);
-                    }
-                    setUser({ email: response.newUserDTO.email, username: response.newUserDTO.username, address: response.newUserDTO.address });
-                    const currentUserStringify = JSON.stringify({ email: response.newUserDTO.email, username: response.newUserDTO.username, address: response.newUserDTO.address });
-                    localStorage.setItem('user', currentUserStringify);
-                    localStorage.setItem('userToken', response.token);
-                    navigate("/");
-                }).catch(err => {
-                    toastErrorHandler(err);
-                });
+        //If any of the fields are empty return error notification and does not send request to server.
+        if(hasEmptyFields) {
+            toastErrorHandler("All fields are required.")
+        } else {
+            if (password !== confirmPassword) {
+                console.log("Password do not match");
+            } else {
+                const newUser = {
+                    email,
+                    username,
+                    password,
+                    confirmPassword,
+                    address
+                };
+
+                registerService(newUser)
+                    .then(response => {
+                        if (response.errors) {
+                            const errMsg = response.errors.map(err => err.msg);
+                            throw new Error(errMsg);
+                        }
+                        setUser({ email: response.newUserDTO.email, username: response.newUserDTO.username, address: response.newUserDTO.address });
+                        const currentUserStringify = JSON.stringify({ email: response.newUserDTO.email, username: response.newUserDTO.username, address: response.newUserDTO.address });
+                        localStorage.setItem('user', currentUserStringify);
+                        localStorage.setItem('userToken', response.token);
+                        navigate("/");
+                    }).catch(err => {
+                        toastErrorHandler(err);
+                    });
+            }
         }
     }
 
