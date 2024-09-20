@@ -128,12 +128,20 @@
 }
 
 @media (max-width: 500px) {
+    .bg-about {
+        padding: 6rem 3rem;
+    }
+
     .omakase-content, .edomae-content {
-        width: 80%;
+        width: 100%;
     }
 
     .omakase-img-container, .edomae-img-container {
-        width: 80%;
+        width: 100%;
+    }
+
+    .edomae-style-container {
+        padding-bottom: 0;
     }
 
     .about-cta-buttons {

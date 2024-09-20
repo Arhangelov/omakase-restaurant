@@ -39,7 +39,7 @@
     align-items: center;
     background-color: rgb(11, 16, 19);
     z-index: 2;
-    padding-bottom: 9rem;
+    padding: 3rem 0;
 }
 
 .container-cart {
