@@ -39,6 +39,7 @@
 [name="address"] {
     margin-bottom: 1.5rem;
     color: rgb(23, 32, 38);
+    padding: .3rem .5rem;
 }
 
 .register-container > p {
