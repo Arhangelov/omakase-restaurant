@@ -64,6 +64,7 @@ p, a, label, button {
 input {
     font-family: var(--paragraph-font);
     border-radius: var(--border-button);
+    border-style: none;
 }
 
 [type="submit"] {
