@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { logoutService } from '../../services/userAuthService';
 import { getCartService } from '../../services/cartService';
 import { toastErrorHandler } from '../../utils/toastErrorHandling';
+import { toastSuccessHandler } from '../../utils/toastSuccessHandling';
 import toast from 'react-hot-toast';
 import "./Navigation.css"
 import { IoCartOutline } from 'react-icons/io5';
@@ -40,7 +41,7 @@ const Navigation = () => {
                 toast.success(`${res.message}`);
                 hideNavbar();
                 navigate('/');
-                toast.success("You successfully logged out.")
+                toastSuccessHandler("You successfully logged out.")
             })
             .catch((err) => {
                 toastErrorHandler(err);

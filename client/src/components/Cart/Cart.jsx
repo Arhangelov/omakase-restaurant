@@ -99,7 +99,7 @@ useEffect(() => {
 
   return (
     <div className="cart-page-container">
-      <h1>Cart Page</h1>
+      <h1>Cart</h1>
       <motion.div className="cart-img" style={{ y, opacity }}>
         <img src={SusiSahimi} alt="about-heading"/>
       </motion.div>

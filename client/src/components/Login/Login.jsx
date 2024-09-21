@@ -6,7 +6,7 @@ import { toastErrorHandler } from '../../utils/toastErrorHandling';
 
 import "./Login.css";
 import SushiVid from "../../resources/sushi-vid.mp4"
-import toast from 'react-hot-toast';
+import { toastSuccessHandler } from '../../utils/toastSuccessHandling';
 
 const Login = () => {
     const [user, setUser] = useContext(Context);
@@ -48,7 +48,7 @@ const Login = () => {
                     localStorage.setItem("user", loggedUserStringify);
                     localStorage.setItem("userToken", res.token);
                     navigate("/");
-                    toast.success("You successfully logged in.")
+                    toastSuccessHandler("You successfully logged in.")
                 }).catch(err => {
                     toastErrorHandler(err);
                 })

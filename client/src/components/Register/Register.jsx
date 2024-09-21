@@ -6,6 +6,7 @@ import { toastErrorHandler } from '../../utils/toastErrorHandling';
 
 import "./Register.css";
 import SushiVid from "../../resources/sushi-vid.mp4";
+import { toastSuccessHandler } from '../../utils/toastSuccessHandling';
 
 const Register = () => {
     const [user, setUser] = useContext(Context);
@@ -58,6 +59,7 @@ const Register = () => {
                         localStorage.setItem('user', currentUserStringify);
                         localStorage.setItem('userToken', response.token);
                         navigate("/");
+                        toastSuccessHandler("🧑 You'r register was successful.")
                     }).catch(err => {
                         toastErrorHandler(err);
                     });
