@@ -2,8 +2,8 @@ import { useCallback, useContext } from 'react';
 import { useCart } from '../store/CartContext';
 import { Context } from '../store/UserContext';
 import { updateCartService } from '../services/cartService';
-import { toast } from 'react-toastify';
 import { useCartQty } from '../store/CartQtyContext';
+import { toastSuccessHandler } from './toastSuccessHandling';
 
 const useAddToCart = () => {
     const [cart, setCart] = useCart()
@@ -22,31 +22,17 @@ const useAddToCart = () => {
                 setCart([...cart]);
 
                 // Notification
-                toast.success('🍣 Product is added to the cart!', {
-                    position: 'top-center',
-                    autoClose: 2000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    theme: 'dark',
-                });
-            return updateCartService(cart[index], user.email)
+                toastSuccessHandler('🍣 Product is added to the cart!');
+
+                return updateCartService(cart[index], user.email)
                 .then(cart => setCartQty(cart.sumQty));
             }
 
             setCart([...cart, sushiProduct]);
 
             // Notification
-            toast.success('🍣 Product is added to the cart!', {
-                position: 'top-center',
-                autoClose: 2000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                theme: 'dark',
-            });
+            toastSuccessHandler('🍣 Product is added to the cart!');
+
             return updateCartService(sushiProduct, user.email)
                 .then(cart => setCartQty(cart.sumQty));
         },
