@@ -8,14 +8,32 @@ import { useCartQty } from '../../store/CartQtyContext';
 import { finishOrderService, getCartService } from '../../services/cartService';
 import { MdArrowBackIos } from "react-icons/md";
 import "./FinishedOrder.css";
+import { toastErrorHandler } from '../../utils/toastErrorHandling';
 
 const FinishedOrder = () => {
     const [user] = useContext(Context);
     const [cart, setCart] = useCart();
-    const [cartQty, setCartQty] = useCartQty();
+    const [ , setCartQty] = useCartQty();
     const [totalPrice, setTotalPrice] = useState(0);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        if (!user.email || cart.length !== 0) {
+            if (!user.email) {
+                navigate("/login");
+                toastErrorHandler("You have to be logged in and cart must not be empty.");
+            } else {
+                navigate("/");
+                toastErrorHandler("Cart must be not empty.");
+            }
+        } else {
+            getCartService(user.email)
+            .then((cart) => {
+                setCart(cart.products);
+                setTotalPrice(cart.totalPrice);
+            })
+        }
+    }, [])
 
     useEffect(() => {
         getCartService(user.email)
