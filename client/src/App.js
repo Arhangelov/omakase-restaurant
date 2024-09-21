@@ -1,9 +1,7 @@
 import { useContext, useEffect } from 'react';
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import { jwtDecode } from "jwt-decode";
-import { toast, Toaster } from 'react-hot-toast';
-import { toastErrorHandler } from './utils/toastErrorHandling';
-
+import { Toaster } from 'react-hot-toast';
 
 import { Context } from './store/UserContext';
 import { useCart } from './store/CartContext';
@@ -31,8 +29,8 @@ import { Cookie } from './components/Cookie/Cookie';
 
 function App() {
   // eslint-disable-next-line no-unused-vars
-  const [ cart, setCart] = useCart();
-  const [ cartQty, setCartQty] = useCartQty();
+  const [ , setCart] = useCart();
+  const [ , setCartQty] = useCartQty();
   const [ user, setUser ] = useContext(Context);
 
   //check if user token is expired
