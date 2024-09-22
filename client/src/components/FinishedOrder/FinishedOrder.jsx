@@ -36,14 +36,6 @@ const FinishedOrder = () => {
     }, [])
 
     useEffect(() => {
-        getCartService(user.email)
-            .then((cart) => {
-                setCart(cart.products);
-                setTotalPrice(cart.totalPrice);
-            })
-        }, [user.email, setCart, setTotalPrice]);
-
-    useEffect(() => {
         finishOrderService(user.email)
         setCartQty(0)
     }, [user.email, setCartQty])
