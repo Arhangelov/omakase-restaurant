@@ -19,12 +19,10 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 
 ## 🖥️ Tech Stack
 
-- **Frontend**: ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- **State Management**: ![React Hooks](https://img.shields.io/badge/react%20hooks-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) (useState, useEffect, useContext)
-- **Styling**: ![CSS3](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- **Backend**:  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) (for storing orders and profiles)
+- **Frontend**: React.js
+- **Styling**: CSS
+- **Backend**: Node.js, Express.js, MongoDB (for storing orders and profiles)
 - **Notifications**: React Hot Toast (for showing success messages)
-- **Routing**: ![React Router](https://img.shields.io/badge/react%20router-%2320232a.svg?style=for-the-badge&logo=reactrouter&logoColor=%2361DAFB) (for navigating between pages)
 
 ## 📦 Installation
 
