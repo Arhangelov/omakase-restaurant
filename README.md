@@ -127,6 +127,10 @@ https://github.com/user-attachments/assets/be2eee65-c54f-409f-ba04-097f35d00e40
 
 https://github.com/user-attachments/assets/419803e6-bae2-46f5-a2bd-183cd4427c77
 
+### 🎉 Finished Order Page
+
+https://github.com/user-attachments/assets/bd681012-3e46-47b3-ab27-18f631b7421c
+
 ### 👤 Profile Page
 
 https://github.com/user-attachments/assets/4801e59f-94bb-4c8d-9a04-090df2b13f7c
