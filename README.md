@@ -22,7 +22,7 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 - **Frontend**: React.js
 - **Styling**: CSS
 - **Backend**: Node.js, Express.js, MongoDB (for storing orders and profiles)
-- **Notifications**: React Hot Toast (for showing success messages)
+- **Notifications**: React Hot Toast (for showing success and error messages)
 
 ## 📦 Installation
 
