@@ -11,7 +11,11 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
 - **Authentication**: You can **Sign Up** and **Sign In** (if you dont wont to register you can use pre-build user):
   - Username: testuser44@test.com
-  - Password: @TestUser44 
+  - Password: @TestUser44
+ 
+## 🔧 Deployment
+
+  - https://omakase-sushi-client.vercel.app/
 
 ## 🖥️ Tech Stack
 
