@@ -9,7 +9,7 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 - **User Profile**: View order history.
 - **Re-ordering**: Quickly re-order your favorite dishes from your profile page based on past orders.
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
-- **Authentication**: You can **Sign Up** and **Sign In** (if you dont wont to register you can use pre-build user):
+- **Authentication**: You can **Sign Up** and **Sign In** (if you don't want to register you can use pre-built user):
   - Username: testuser44@test.com
   - Password: @TestUser44
  
@@ -87,7 +87,10 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 To run this project, you may need to set up environment variables for backend services like authentication or database connections. For example, in a `.env` file:
 
 ```
-REACT_APP_API_URL=http://localhost:5000/api
+PORT=<YOUR_PORT>
+DB_USER_NAME=<YOUR_DATABASE_USERNAME>
+DB_USER_PASS=<YOUR_DATABASE_PASSWORD>
+SECRET=<YOUR_SECRET_KEY>
 ```
 
 ## 🤝 Contributing
