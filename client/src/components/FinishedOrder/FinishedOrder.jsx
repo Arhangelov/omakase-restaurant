@@ -18,7 +18,7 @@ const FinishedOrder = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!user.email || cart.length !== 0) {
+        if (!user.email || cart.length == 0) {
             if (!user.email) {
                 navigate("/login");
                 toastErrorHandler("You have to be logged in and cart must not be empty.");
