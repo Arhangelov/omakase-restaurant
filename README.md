@@ -9,6 +9,9 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 - **User Profile**: View order history.
 - **Re-ordering**: Quickly re-order your favorite dishes from your profile page based on past orders.
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Authentication**: You can **Sign Up** and **Sign In** (if you dont wont to register you can use pre-build user):
+  - Username: testuser44@test.com
+  - Password: @TestUser44 
 
 ## 🖥️ Tech Stack
 
