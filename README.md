@@ -9,15 +9,20 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 - **User Profile**: View order history.
 - **Re-ordering**: Quickly re-order your favorite dishes from your profile page based on past orders.
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Authentication**: You can **Sign Up** and **Sign In** (if you don't want to register you can use pre-built user):
+  - Username: testuser44@test.com
+  - Password: @TestUser44
+ 
+## 🔧 Deployment
+
+  - https://omakase-sushi-client.vercel.app/
 
 ## 🖥️ Tech Stack
 
-- **Frontend**: ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- **State Management**: ![React Hooks](https://img.shields.io/badge/react%20hooks-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) (useState, useEffect, useContext)
-- **Styling**: ![CSS3](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- **Backend**:  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) (for storing orders and profiles)
-- **Notifications**: React Hot Toast (for showing success messages)
-- **Routing**: ![React Router](https://img.shields.io/badge/react%20router-%2320232a.svg?style=for-the-badge&logo=reactrouter&logoColor=%2361DAFB) (for navigating between pages)
+- **Frontend**: React.js
+- **Styling**: CSS
+- **Backend**: Node.js, Express.js, MongoDB (for storing orders and profiles)
+- **Notifications**: React Hot Toast (for showing success and error messages)
 
 ## 📦 Installation
 
@@ -82,7 +87,10 @@ Welcome to **Omakase Restaurant**! This is a web-based sushi restaurant applicat
 To run this project, you may need to set up environment variables for backend services like authentication or database connections. For example, in a `.env` file:
 
 ```
-REACT_APP_API_URL=http://localhost:5000/api
+PORT=<YOUR_PORT>
+DB_USER_NAME=<YOUR_DATABASE_USERNAME>
+DB_USER_PASS=<YOUR_DATABASE_PASSWORD>
+SECRET=<YOUR_SECRET_KEY>
 ```
 
 ## 🤝 Contributing
@@ -126,6 +134,10 @@ https://github.com/user-attachments/assets/be2eee65-c54f-409f-ba04-097f35d00e40
 ### 🛒 Cart Page
 
 https://github.com/user-attachments/assets/419803e6-bae2-46f5-a2bd-183cd4427c77
+
+### 🎉 Finished Order Page
+
+https://github.com/user-attachments/assets/bd681012-3e46-47b3-ab27-18f631b7421c
 
 ### 👤 Profile Page
 
