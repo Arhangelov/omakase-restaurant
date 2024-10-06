@@ -18,13 +18,17 @@ const rePurchaseOrder = async ({ cart, totalPrice, userEmail }) => {
     
     user.cart.sumQty = sumQty;
 
-    let totalPriceActual = user.cart.products.reduce((totalPrice, cartItem) => {
+    let calculatedTotalPrice = user.cart.products.reduce((totalPrice, cartItem) => {
         return totalPrice + cartItem.price
     }, 0);
 
-    user.cart.totalPrice = totalPriceActual;
+    if(totalPrice === calculatedTotalPrice){
+        user.cart.totalPrice = totalPrice
+    } else {
+        user.cart.totalPrice = calculatedTotalPrice;
+    }
 
-    user.save();
+    await user.save();
     return user.cart;
 }
 
