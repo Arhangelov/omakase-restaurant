@@ -31,7 +31,6 @@ const Profile = () => {
 
             if(reOrderedCart) {
                 setCart(reOrderedCart.products);
-                console.log("PROFILE setCart");
                 setCartQty(reOrderedCart.sumQty);
                 navigate("/cart");
             }
